@@ -6,7 +6,7 @@ This project was written in C# using the [Unity Engine](unity3d.com). It is a ge
 
 ## Motivation
 
-This project was motivated because at some time of my studies i came across the need of render some geometry on my application, but this geometry was an entry of the user and i noticed that this was a complicated task to do with the avaliable features. So i started implementing this functionality only for .obj extensions, but i want to expand this code to render the most embracing number of extensions as possible.
+This project was motivated because at some time of my studies I came across the need of render some geometry on my application, but this geometry was an entry of the user and I noticed that this was a complicated task to do with the avaliable features. So I started implementing this functionality only for .obj extensions, but I want to expand this code to render the most embracing number of extensions as possible.
 
 ## Installation
 
