@@ -14,12 +14,13 @@ public class InitialScreen : MonoBehaviour {
         _textFieldString = "";
         _textureLink = "";
         isOnModelView = false;
+        _importer = new GeometryImporter();
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-	    if(Input.GetKey(KeyCode.Escape))
+
+    // Update is called once per frame
+    void Update () {
+	    if(Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isOnModelView)
                 Application.Quit();
@@ -46,7 +47,6 @@ public class InitialScreen : MonoBehaviour {
 
             if (GUI.Button(new Rect(10, 70, 100, 20), "Download"))
             {
-                _importer = new GeometryImporter();
                 GameObject gameObject = _importer.ImportObj(_textFieldString);
                 isOnModelView = true;
             }

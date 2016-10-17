@@ -47,7 +47,7 @@ public class ObjectController : MonoBehaviour {
                 translation.x += (actualMouse.x - _lastMouse.x)* Time.deltaTime;//translationVelocity * mouseMovementDirection.x;
                 translation.y += (actualMouse.y - _lastMouse.y)* Time.deltaTime;//translationVelocity * mouseMovementDirection.y;
                 translation.z = 0;
-                _selectedObject.transform.Translate(translation);
+                _selectedObject.transform.Translate(translation, Space.World);
             }
 
             float scroll = Input.GetAxis("Mouse ScrollWheel");

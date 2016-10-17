@@ -39,6 +39,10 @@ public class GeometryImporter
 
     public GameObject ImportObj(string filepath)
     {
+        //Clean all parameters
+        ResetParameters();
+
+        //Initialize the game object
         GameObject gameObject = null;
 
         //extract all general informations about the file and the file content
